@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./output_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-profiles-app</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/Admin/Desktop/React.Js2/user-profiles-app/src/index.css">:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/Admin/Desktop/React.Js2/user-profiles-app/src/components/UserCard.css">.user-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 15px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+.user-card:hover {
+  transform: translateY(-3px);
+}
+.user-card h3 {
+  margin-top: 0;
+  color: #e958a3;
+}
+.user-card p {
+  margin: 6px 0;
+  color: #0c7fc7;
+  font-size: 14px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Admin/Desktop/React.Js2/user-profiles-app/src/App.css">body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+.app-header h1 {
+  color: #49abad;
+  margin-bottom: 15px;
+}
+.app-header p {
+  color: #334a4b;
+  margin-bottom: 30px;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}</style></head>
+  <body>
+    <div id="root"><div class="app-container"><header class="app-header"><h1>User Profiles Dashboard</h1><p>Profiles Details are mentioned in below</p></header><div class="card-grid"><div class="user-card"><h3>Soujanya</h3><p><strong>City:</strong> Bengaluru</p><p><strong>Age:</strong> 25</p><p><strong>Email:</strong> soujanya@thestackly.com</p><p><strong>Phone:</strong> +91 98765 43210</p></div><div class="user-card"><h3>srishti</h3><p><strong>City:</strong> Mumbai</p><p><strong>Age:</strong> 24</p><p><strong>Email:</strong> srishti@thestackly.com</p><p><strong>Phone:</strong> +91 91234 56789</p></div><div class="user-card"><h3>Rohan Verma</h3><p><strong>City:</strong> Delhi</p><p><strong>Age:</strong> 26</p><p><strong>Email:</strong> rohan.verma@example.com</p><p><strong>Phone:</strong> +91 99887 76655</p></div><div class="user-card"><h3>Ananya Iyer</h3><p><strong>City:</strong> Chennai</p><p><strong>Age:</strong> 23</p><p><strong>Email:</strong> ananya.iyer@example.com</p><p><strong>Phone:</strong> +91 94455 66778</p></div><div class="user-card"><h3>Kiran Rao</h3><p><strong>City:</strong> Hyderabad</p><p><strong>Age:</strong> 25</p><p><strong>Email:</strong> kiran.rao@example.com</p><p><strong>Phone:</strong> +91 91122 33445</p></div></div></div></div>
+    <script type="module" src="./output_files/main.jsx"></script>
+  
+
+</body></html>

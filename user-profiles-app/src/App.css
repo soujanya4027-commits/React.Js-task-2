@@ -1,0 +1,26 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+.app-header h1 {
+  color: #49abad;
+  margin-bottom: 15px;
+}
+.app-header p {
+  color: #334a4b;
+  margin-bottom: 30px;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
